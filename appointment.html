@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book an appointment at SmileCare Dental Clinic - Easy online booking system.">
+  <title>अपॉइंटमेंट बुक करें - SmileCare Dental Clinic</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html/index.html">
+        <div class="brand-logo">🦷</div>
+        <span class="brand-name">SmileCare Dental</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html/index.html">होम</a>
+        <a href="about.html">हमारे बारे में</a>
+        <a href="services.html">सेवाएं</a>
+        <a href="team.html">हमारी टीम</a>
+        <a href="gallery.html">गैलरी</a>
+        <a href="contact.html">संपर्क</a>
+        <a href="appointment.html" class="btn-appointment active">अपॉइंटमेंट बुक करें</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>अपॉइंटमेंट बुक करें</h1>
+        <p class="page-subtitle">आसान और त्वरित ऑनलाइन बुकिंग</p>
+      </div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section class="section appointment-section">
+      <div class="container">
+        <div class="appointment-wrapper">
+          <div class="appointment-form-container">
+            <h2>अपॉइंटमेंट फॉर्म</h2>
+            <p class="form-intro">कृपया नीचे दी गई जानकारी भरें और हम आपसे जल्द ही संपर्क करेंगे।</p>
+            
+            <form id="appointmentForm" class="appointment-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="patientName">रोगी का नाम *</label>
+                  <input type="text" id="patientName" name="patientName" required placeholder="अपना पूरा नाम दर्ज करें">
+                </div>
+                <div class="form-group">
+                  <label for="patientAge">उम्र *</label>
+                  <input type="number" id="patientAge" name="patientAge" required min="1" max="120" placeholder="उम्र">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="patientEmail">ईमेल *</label>
+                  <input type="email" id="patientEmail" name="patientEmail" required placeholder="अपना ईमेल दर्ज करें">
+                </div>
+                <div class="form-group">
+                  <label for="patientPhone">फोन नंबर *</label>
+                  <input type="tel" id="patientPhone" name="patientPhone" required placeholder="10 अंकों का मोबाइल नंबर">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="appointmentDate">अपॉइंटमेंट की तारीख *</label>
+                  <input type="date" id="appointmentDate" name="appointmentDate" required>
+                </div>
+                <div class="form-group">
+                  <label for="appointmentTime">समय पसंद *</label>
+                  <select id="appointmentTime" name="appointmentTime" required>
+                    <option value="">समय चुनें</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                    <option value="17:00">05:00 PM</option>
+                    <option value="18:00">06:00 PM</option>
+                    <option value="19:00">07:00 PM</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="doctor">डॉक्टर चुनें (वैकल्पिक)</label>
+                <select id="doctor" name="doctor">
+                  <option value="">कोई प्राथमिकता नहीं</option>
+                  <option value="dr-rajesh">डॉ. राजेश कुमार - इम्प्लांट, सर्जरी</option>
+                  <option value="dr-priya">डॉ. प्रिया शर्मा - कॉस्मेटिक</option>
+                  <option value="dr-amit">डॉ. अमित सिंह - ऑर्थोडॉन्टिक्स</option>
+                  <option value="dr-anjali">डॉ. अंजली वर्मा - बाल चिकित्सा</option>
+                  <option value="dr-vikram">डॉ. विक्रम पटेल - रूट कैनाल</option>
+                  <option value="dr-neha">डॉ. नेहा गुप्ता - पीरियोडॉन्टिक्स</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="service">सेवा चुनें *</label>
+                <select id="service" name="service" required>
+                  <option value="">सेवा चुनें</option>
+                  <option value="general">सामान्य दंत चिकित्सा</option>
+                  <option value="cosmetic">कॉस्मेटिक दंत चिकित्सा</option>
+                  <option value="implants">दंत इम्प्लांट</option>
+                  <option value="orthodontics">ऑर्थोडॉन्टिक्स</option>
+                  <option value="rootcanal">रूट कैनाल</option>
+                  <option value="pediatric">बाल चिकित्सा दंत चिकित्सा</option>
+                  <option value="emergency">आपातकालीन</option>
+                  <option value="consultation">सामान्य परामर्श</option>
+                  <option value="cleaning">दांतों की सफाई</option>
+                  <option value="other">अन्य</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="previousVisit">क्या आप पहले हमारे क्लिनिक आए हैं?</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="previousVisit" value="yes"> हाँ
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="previousVisit" value="no" checked> नहीं
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">अतिरिक्त जानकारी या संदेश</label>
+                <textarea id="message" name="message" rows="4" placeholder="कोई विशेष आवश्यकता या संदेश (वैकल्पिक)"></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="terms" name="terms" required>
+                  <span>मैं <a href="terms.html">नियम और शर्तें</a> और <a href="privacy.html">गोपनीयता नीति</a> से सहमत हूं *</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large">अपॉइंटमेंट बुक करें</button>
+            </form>
+          </div>
+
+          <!-- Appointment Info Sidebar -->
+          <div class="appointment-info-sidebar">
+            <div class="info-card">
+              <h3>📞 तुरंत बुकिंग</h3>
+              <p>फोन पर अपॉइंटमेंट बुक करने के लिए:</p>
+              <p class="phone-number">+91 98765 43210</p>
+            </div>
+
+            <div class="info-card">
+              <h3>🕒 खुले रहने का समय</h3>
+              <ul class="hours-list">
+                <li><strong>सोमवार - शनिवार:</strong><br>9:00 AM - 8:00 PM</li>
+                <li><strong>रविवार:</strong><br>10:00 AM - 2:00 PM</li>
+                <li><strong>आपातकालीन:</strong><br>24/7 उपलब्ध</li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <h3>📍 हमारा पता</h3>
+              <p>123, मुख्य सड़क<br>नई दिल्ली - 110001<br>भारत</p>
+            </div>
+
+            <div class="info-card">
+              <h3>💡 सुझाव</h3>
+              <ul class="tips-list">
+                <li>✓ अपॉइंटमेंट से 15 मिनट पहले पहुंचें</li>
+                <li>✓ अपने पिछले रिकॉर्ड लाएं (यदि कोई हो)</li>
+                <li>✓ अपनी दवाओं की सूची लाएं</li>
+                <li>✓ बीमा कार्ड लाना न भूलें</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🦷</div>
+          <h3>SmileCare Dental</h3>
+          <p>आपकी मुस्कान हमारी प्राथमिकता। विश्वसनीय और पेशेवर दंत चिकित्सा सेवाएं।</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>त्वरित लिंक</h4>
+          <ul>
+            <li><a href="index.html/index.html">होम</a></li>
+            <li><a href="about.html">हमारे बारे में</a></li>
+            <li><a href="services.html">सेवाएं</a></li>
+            <li><a href="team.html">हमारी टीम</a></li>
+            <li><a href="gallery.html">गैलरी</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>सेवाएं</h4>
+          <ul>
+            <li><a href="services.html#general">सामान्य दंत चिकित्सा</a></li>
+            <li><a href="services.html#cosmetic">कॉस्मेटिक दंत चिकित्सा</a></li>
+            <li><a href="services.html#implants">इम्प्लांट</a></li>
+            <li><a href="services.html#orthodontics">ऑर्थोडॉन्टिक्स</a></li>
+            <li><a href="services.html#rootcanal">रूट कैनाल</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>संपर्क करें</h4>
+          <ul class="contact-info">
+            <li>📍 123, मुख्य सड़क, नई दिल्ली - 110001</li>
+            <li>📞 +91 98765 43210</li>
+            <li>📧 info@smilecaredental.com</li>
+            <li>🕒 सोम-शनि: 9:00 AM - 8:00 PM</li>
+            <li>🕒 रविवार: 10:00 AM - 2:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div class="copyright">
+          <p>© <span id="currentYear">2025</span> SmileCare Dental Clinic. सभी अधिकार सुरक्षित।</p>
+        </div>
+        <div class="footer-links-bottom">
+          <a href="privacy.html">गोपनीयता नीति</a>
+          <a href="terms.html">नियम और शर्तें</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="asset/js/script.js" defer></script>
+</body>
+</html>
+

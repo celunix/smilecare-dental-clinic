@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gallery - SmileCare Dental Clinic - See our clinic, facilities, and before/after treatment results.">
+  <title>गैलरी - SmileCare Dental Clinic</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html/index.html">
+        <div class="brand-logo">🦷</div>
+        <span class="brand-name">SmileCare Dental</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html/index.html">होम</a>
+        <a href="about.html">हमारे बारे में</a>
+        <a href="services.html">सेवाएं</a>
+        <a href="team.html">हमारी टीम</a>
+        <a href="gallery.html" class="active">गैलरी</a>
+        <a href="contact.html">संपर्क</a>
+        <a href="appointment.html" class="btn-appointment">अपॉइंटमेंट बुक करें</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>गैलरी</h1>
+        <p class="page-subtitle">हमारे क्लिनिक, सुविधाएं और उपचार परिणाम</p>
+      </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="section gallery-filters-section">
+      <div class="container">
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">सभी</button>
+          <button class="filter-btn" data-filter="clinic">क्लिनिक</button>
+          <button class="filter-btn" data-filter="treatment">उपचार</button>
+          <button class="filter-btn" data-filter="before-after">पहले-बाद</button>
+          <button class="filter-btn" data-filter="equipment">उपकरण</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="gallery-grid">
+          <!-- Clinic Images -->
+          <div class="gallery-item" data-category="clinic">
+            <img src="asset/img/gallery/clinic-1.jpg" alt="Clinic Reception" />
+            <div class="gallery-overlay">
+              <h4>रिसेप्शन एरिया</h4>
+              <p>आरामदायक और आधुनिक रिसेप्शन</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="clinic">
+            <img src="asset/img/gallery/clinic-2.jpg" alt="Treatment Room" />
+            <div class="gallery-overlay">
+              <h4>उपचार कक्ष</h4>
+              <p>आधुनिक उपकरणों से सुसज्जित</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="clinic">
+            <img src="asset/img/gallery/clinic-3.jpg" alt="Waiting Area" />
+            <div class="gallery-overlay">
+              <h4>प्रतीक्षा कक्ष</h4>
+              <p>आरामदायक प्रतीक्षा क्षेत्र</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="clinic">
+            <img src="asset/img/gallery/clinic-4.jpg" alt="Dental Chair" />
+            <div class="gallery-overlay">
+              <h4>दंत कुर्सी</h4>
+              <p>आधुनिक और आरामदायक</p>
+            </div>
+          </div>
+
+          <!-- Treatment Images -->
+          <div class="gallery-item" data-category="treatment">
+            <img src="asset/img/gallery/treatment-1.jpg" alt="Dental Treatment" />
+            <div class="gallery-overlay">
+              <h4>सामान्य उपचार</h4>
+              <p>दर्द रहित प्रक्रिया</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="treatment">
+            <img src="asset/img/gallery/treatment-2.jpg" alt="Cosmetic Treatment" />
+            <div class="gallery-overlay">
+              <h4>कॉस्मेटिक उपचार</h4>
+              <p>मुस्कान सुधार</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="treatment">
+            <img src="asset/img/gallery/treatment-3.jpg" alt="Implant Procedure" />
+            <div class="gallery-overlay">
+              <h4>इम्प्लांट प्रक्रिया</h4>
+              <p>स्थायी समाधान</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="treatment">
+            <img src="asset/img/gallery/treatment-4.jpg" alt="Orthodontic Treatment" />
+            <div class="gallery-overlay">
+              <h4>ऑर्थोडॉन्टिक उपचार</h4>
+              <p>सीधे दांत</p>
+            </div>
+          </div>
+
+          <!-- Before After Images -->
+          <div class="gallery-item" data-category="before-after">
+            <img src="asset/img/gallery/before-after-1.jpg" alt="Before After 1" />
+            <div class="gallery-overlay">
+              <h4>ट्रांसफॉर्मेशन</h4>
+              <p>सफल उपचार परिणाम</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="before-after">
+            <img src="asset/img/gallery/before-after-2.jpg" alt="Before After 2" />
+            <div class="gallery-overlay">
+              <h4>मुस्कान सुधार</h4>
+              <p>कॉस्मेटिक दंत चिकित्सा</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="before-after">
+            <img src="asset/img/gallery/before-after-3.jpg" alt="Before After 3" />
+            <div class="gallery-overlay">
+              <h4>इम्प्लांट सफलता</h4>
+              <p>प्राकृतिक दिखने वाले दांत</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="before-after">
+            <img src="asset/img/gallery/before-after-4.jpg" alt="Before After 4" />
+            <div class="gallery-overlay">
+              <h4>ब्रेसिज़ परिणाम</h4>
+              <p>सीधे और सुंदर दांत</p>
+            </div>
+          </div>
+
+          <!-- Equipment Images -->
+          <div class="gallery-item" data-category="equipment">
+            <img src="asset/img/gallery/equipment-1.jpg" alt="Dental Equipment" />
+            <div class="gallery-overlay">
+              <h4>आधुनिक उपकरण</h4>
+              <p>नवीनतम तकनीक</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="equipment">
+            <img src="asset/img/gallery/equipment-2.jpg" alt="X-Ray Machine" />
+            <div class="gallery-overlay">
+              <h4>डिजिटल एक्स-रे</h4>
+              <p>सटीक निदान</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="equipment">
+            <img src="asset/img/gallery/equipment-3.jpg" alt="Sterilization" />
+            <div class="gallery-overlay">
+              <h4>नसबंदी</h4>
+              <p>सुरक्षा और स्वच्छता</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="equipment">
+            <img src="asset/img/gallery/equipment-4.jpg" alt="Dental Lab" />
+            <div class="gallery-overlay">
+              <h4>दंत प्रयोगशाला</h4>
+              <p>गुणवत्तापूर्ण निर्माण</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightboxImage" src="" alt="">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <a class="lightbox-prev" id="lightboxPrev">&#10094;</a>
+      <a class="lightbox-next" id="lightboxNext">&#10095;</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🦷</div>
+          <h3>SmileCare Dental</h3>
+          <p>आपकी मुस्कान हमारी प्राथमिकता। विश्वसनीय और पेशेवर दंत चिकित्सा सेवाएं।</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>त्वरित लिंक</h4>
+          <ul>
+            <li><a href="index.html/index.html">होम</a></li>
+            <li><a href="about.html">हमारे बारे में</a></li>
+            <li><a href="services.html">सेवाएं</a></li>
+            <li><a href="team.html">हमारी टीम</a></li>
+            <li><a href="gallery.html">गैलरी</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>सेवाएं</h4>
+          <ul>
+            <li><a href="services.html#general">सामान्य दंत चिकित्सा</a></li>
+            <li><a href="services.html#cosmetic">कॉस्मेटिक दंत चिकित्सा</a></li>
+            <li><a href="services.html#implants">इम्प्लांट</a></li>
+            <li><a href="services.html#orthodontics">ऑर्थोडॉन्टिक्स</a></li>
+            <li><a href="services.html#rootcanal">रूट कैनाल</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>संपर्क करें</h4>
+          <ul class="contact-info">
+            <li>📍 123, मुख्य सड़क, नई दिल्ली - 110001</li>
+            <li>📞 +91 98765 43210</li>
+            <li>📧 info@smilecaredental.com</li>
+            <li>🕒 सोम-शनि: 9:00 AM - 8:00 PM</li>
+            <li>🕒 रविवार: 10:00 AM - 2:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div class="copyright">
+          <p>© <span id="currentYear">2025</span> SmileCare Dental Clinic. सभी अधिकार सुरक्षित।</p>
+        </div>
+        <div class="footer-links-bottom">
+          <a href="privacy.html">गोपनीयता नीति</a>
+          <a href="terms.html">नियम और शर्तें</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="asset/js/script.js" defer></script>
+</body>
+</html>
+

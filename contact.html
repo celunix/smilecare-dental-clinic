@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact SmileCare Dental Clinic - Get in touch for appointments and inquiries.">
+  <title>संपर्क करें - SmileCare Dental Clinic</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html/index.html">
+        <div class="brand-logo">🦷</div>
+        <span class="brand-name">SmileCare Dental</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html/index.html">होम</a>
+        <a href="about.html">हमारे बारे में</a>
+        <a href="services.html">सेवाएं</a>
+        <a href="team.html">हमारी टीम</a>
+        <a href="gallery.html">गैलरी</a>
+        <a href="contact.html" class="active">संपर्क</a>
+        <a href="appointment.html" class="btn-appointment">अपॉइंटमेंट बुक करें</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>संपर्क करें</h1>
+        <p class="page-subtitle">हमसे संपर्क करें - हम आपकी मदद के लिए यहाँ हैं</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h2>हमें संदेश भेजें</h2>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">आपका नाम *</label>
+                <input type="text" id="name" name="name" required placeholder="अपना नाम दर्ज करें">
+              </div>
+              <div class="form-group">
+                <label for="email">ईमेल *</label>
+                <input type="email" id="email" name="email" required placeholder="अपना ईमेल दर्ज करें">
+              </div>
+              <div class="form-group">
+                <label for="phone">फोन नंबर *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="अपना फोन नंबर दर्ज करें">
+              </div>
+              <div class="form-group">
+                <label for="subject">विषय</label>
+                <select id="subject" name="subject">
+                  <option value="appointment">अपॉइंटमेंट</option>
+                  <option value="inquiry">सामान्य पूछताछ</option>
+                  <option value="emergency">आपातकालीन</option>
+                  <option value="feedback">प्रतिक्रिया</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">संदेश *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="अपना संदेश यहाँ लिखें"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">संदेश भेजें</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info-wrapper">
+            <h2>संपर्क जानकारी</h2>
+            <div class="contact-info-cards">
+              <div class="contact-info-card">
+                <div class="contact-icon">📍</div>
+                <h3>पता</h3>
+                <p>123, मुख्य सड़क<br>नई दिल्ली - 110001<br>भारत</p>
+              </div>
+              <div class="contact-info-card">
+                <div class="contact-icon">📞</div>
+                <h3>फोन</h3>
+                <p>+91 98765 43210<br>+91 98765 43211</p>
+                <p class="contact-note">24/7 आपातकालीन: +91 98765 43212</p>
+              </div>
+              <div class="contact-info-card">
+                <div class="contact-icon">📧</div>
+                <h3>ईमेल</h3>
+                <p>info@smilecaredental.com<br>appointments@smilecaredental.com</p>
+              </div>
+              <div class="contact-info-card">
+                <div class="contact-icon">🕒</div>
+                <h3>खुले रहने का समय</h3>
+                <p>सोमवार - शनिवार: 9:00 AM - 8:00 PM<br>रविवार: 10:00 AM - 2:00 PM</p>
+                <p class="contact-note">आपातकालीन सेवाएं 24/7 उपलब्ध</p>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-section">
+              <h3>सोशल मीडिया पर हमें फॉलो करें</h3>
+              <div class="social-links-large">
+                <a href="#" class="social-link">📘 Facebook</a>
+                <a href="#" class="social-link">📷 Instagram</a>
+                <a href="#" class="social-link">🐦 Twitter</a>
+                <a href="#" class="social-link">💼 LinkedIn</a>
+                <a href="#" class="social-link">📹 YouTube</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section">
+      <div class="container">
+        <h2>हमारा स्थान</h2>
+        <div class="map-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.8693149999997!2d77.20902131508147!3d28.61393998243648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2a87785849d%3A0x1c1e1b1b1b1b1b1b!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+            width="100%" 
+            height="450" 
+            style="border:0; border-radius: 12px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>अक्सर पूछे जाने वाले प्रश्न</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>अपॉइंटमेंट कैसे बुक करें?</h4>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>आप हमारी वेबसाइट पर अपॉइंटमेंट पेज से ऑनलाइन बुकिंग कर सकते हैं, या हमें सीधे फोन कर सकते हैं।</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>आपातकालीन सेवाएं कब उपलब्ध हैं?</h4>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>हमारी आपातकालीन सेवाएं 24/7 उपलब्ध हैं। आपातकाल के लिए कृपया +91 98765 43212 पर कॉल करें।</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>क्या आप बीमा स्वीकार करते हैं?</h4>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>हाँ, हम अधिकांश प्रमुख बीमा प्रदाताओं को स्वीकार करते हैं। कृपया अपॉइंटमेंट से पहले अपने बीमा विवरण की जांच करें।</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>पार्किंग सुविधा उपलब्ध है?</h4>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>हाँ, हमारे क्लिनिक में निःशुल्क पार्किंग सुविधा उपलब्ध है।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🦷</div>
+          <h3>SmileCare Dental</h3>
+          <p>आपकी मुस्कान हमारी प्राथमिकता। विश्वसनीय और पेशेवर दंत चिकित्सा सेवाएं।</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>त्वरित लिंक</h4>
+          <ul>
+            <li><a href="index.html/index.html">होम</a></li>
+            <li><a href="about.html">हमारे बारे में</a></li>
+            <li><a href="services.html">सेवाएं</a></li>
+            <li><a href="team.html">हमारी टीम</a></li>
+            <li><a href="gallery.html">गैलरी</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>सेवाएं</h4>
+          <ul>
+            <li><a href="services.html#general">सामान्य दंत चिकित्सा</a></li>
+            <li><a href="services.html#cosmetic">कॉस्मेटिक दंत चिकित्सा</a></li>
+            <li><a href="services.html#implants">इम्प्लांट</a></li>
+            <li><a href="services.html#orthodontics">ऑर्थोडॉन्टिक्स</a></li>
+            <li><a href="services.html#rootcanal">रूट कैनाल</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>संपर्क करें</h4>
+          <ul class="contact-info">
+            <li>📍 123, मुख्य सड़क, नई दिल्ली - 110001</li>
+            <li>📞 +91 98765 43210</li>
+            <li>📧 info@smilecaredental.com</li>
+            <li>🕒 सोम-शनि: 9:00 AM - 8:00 PM</li>
+            <li>🕒 रविवार: 10:00 AM - 2:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div class="copyright">
+          <p>© <span id="currentYear">2025</span> SmileCare Dental Clinic. सभी अधिकार सुरक्षित।</p>
+        </div>
+        <div class="footer-links-bottom">
+          <a href="privacy.html">गोपनीयता नीति</a>
+          <a href="terms.html">नियम और शर्तें</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="asset/js/script.js" defer></script>
+</body>
+</html>
+
